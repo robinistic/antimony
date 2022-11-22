@@ -47,7 +47,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(https://robinistic.github.io/antimony/Antimony%20Nepal/bg.jpg);
+    background-image: url('https://robinistic.github.io/antimony/Antimony%20Nepal/bg.jpg');
     /* background-position: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
