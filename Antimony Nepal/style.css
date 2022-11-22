@@ -47,7 +47,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/bg.jpg);
+    background-image: url(bg.jpg);
     /* background-position: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +65,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("/polaroids.jpg");
+    background-image: url("polaroids.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
