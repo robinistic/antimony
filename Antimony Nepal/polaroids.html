@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/polaroids.css">
+    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- nav bar -->
+
+    <header aria-label="Site Header" class="bg-white dark:bg-gray-900">
+        <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+            <a class="block text-teal-600 dark:text-teal-300" href="/">
+                <span class="sr-only">Home</span>
+                <img id="logo" src="/logo.png" alt="" srcset="">
+            </a>
+
+            <div class="flex flex-1 items-center justify-end md:justify-between">
+                <nav aria-label="Site Nav" class="hidden md:block">
+                    <ul class="flex items-center gap-6 text-sm">
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="/">
+                                About
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="/">
+                                Careers
+                            </a>
+                        </li> -->
+
+                        <!-- <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="/">
+                                History
+                            </a>
+                        </li> -->
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="/">
+                                Services
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="/">
+                                Projects
+                            </a>
+                        </li> -->
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="/">
+                                Blogs
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <div class="sm:flex sm:gap-4">
+                        <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
+                            href="/">
+                            Login
+                        </a>
+
+                        <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75 sm:block"
+                            href="/">
+                            Register
+                        </a>
+                    </div>
+
+                    <button
+                        class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75 md:hidden">
+                        <span class="sr-only">Toggle menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--
+  This component uses @tailwindcss/forms
+
+  yarn add @tailwindcss/forms
+  npm install @tailwindcss/forms
+
+  plugins: [require('@tailwindcss/forms')]
+-->
+
+    <section>
+        <h1 class="sr-only">Checkout</h1>
+
+        <div class="relative mx-auto max-w-screen-2xl">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="bg-gray-50 py-12 md:py-24">
+                    <div class="mx-auto max-w-lg px-4 lg:px-8">
+
+
+
+
+                        <div id="uploadArea" class="wrapper">
+                            <header>Upload Your Pictures</header>
+                            <form action="#">
+                                <input class="file-input" type="file" name="file" hidden>
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p id="status">Please upload payment screenshot with pictures</p>
+                                
+                                <section class="progress-area"></section>
+                                <section class="uploaded-area"></section>
+                                </form>
+                        </div>
+
+                        <div id="uploadArea" class="wrapper">
+                            <header>Pay via <span id="paymentChoosen">e-sewa</span></header>
+                            <img src="/esewaqr.jpg" alt="" srcset="">
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="bg-white py-12 md:py-24">
+                    <div class="mx-auto max-w-lg px-4 lg:px-8">
+                        <form class="grid grid-cols-6 gap-4">
+                            <div class="col-span-3">
+                                <label class="mb-1 block text-sm text-gray-600" for="first_name">
+                                    First Name
+                                </label>
+
+                                <input class="w-full rounded-lg border-gray-200 p-2.5 text-sm shadow-sm" type="text"
+                                    id="first_name" />
+                            </div>
+
+                            <div class="col-span-3">
+                                <label class="mb-1 block text-sm text-gray-600" for="last_name">
+                                    Last Name
+                                </label>
+
+                                <input class="w-full rounded-lg border-gray-200 p-2.5 text-sm shadow-sm" type="text"
+                                    id="last_name" />
+                            </div>
+
+                            <div class="col-span-6">
+                                <label class="mb-1 block text-sm text-gray-600" for="email">
+                                    Email
+                                </label>
+
+                                <input class="w-full rounded-lg border-gray-200 p-2.5 text-sm shadow-sm" type="email"
+                                    id="email" />
+                            </div>
+
+                            <div class="col-span-6">
+                                <label class="mb-1 block text-sm text-gray-600" for="phone">
+                                    Phone
+                                </label>
+
+                                <input class="w-full rounded-lg border-gray-200 p-2.5 text-sm shadow-sm" type="tel"
+                                    id="phone" />
+                            </div>
+                            <div class="col-span-6">
+                                <label class="mb-1 block text-sm text-gray-600" for="address">
+                                    Address
+                                </label>
+
+                                <input class="w-full rounded-lg border-gray-200 p-2.5 text-sm shadow-sm" type="tel"
+                                    id="address" />
+                            </div>
+                            <div class="col-span-6">
+                                <label class="mb-1 block text-sm text-gray-600" for="polaroidsNumber">
+                                    Number of Polraoids
+                                </label>
+
+                                <input class="w-full rounded-lg border-gray-200 p-2.5 text-sm shadow-sm" type="tel"
+                                    id="polaroidsNumber" />
+                            </div>
+
+                            <fieldset class="col-span-6">
+                                <legend class="mb-1 block text-sm text-gray-600">
+                                    Payment
+                                </legend>
+
+                                <div class="-space-y-px rounded-lg bg-white shadow-sm">
+                                    <div>
+                                        <label class="sr-only" for="payment">Choose a payment option</label>
+                                        <select
+                                            class="relative w-full rounded-t-lg border-gray-200 p-2.5 text-sm focus:z-10"
+                                            id="paymentOption" name="paymentOption">
+                                            <option>eSewa</option>
+                                            <option>Khalti</option>
+                                            <option>IME Pay</option>
+                                            <option>Bank Transfer</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <div class="mt-8 mb-8">
+                                            <p class="mt-1 text-sm text-gray-500">Total Bill:</p>
+
+                                            <p class="text-2xl font-medium tracking-tight">₹ <span id="price"> 00.
+                                                    00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="col-span-6">
+                                <button class="block w-full rounded-lg bg-black p-2.5 text-sm text-white">
+                                    Place my order
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

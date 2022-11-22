@@ -1,0 +1,89 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+
+body {
+    /* background-color: #d1d1f2; */
+   margin: 0 0;
+   font-family: 'Darker Grotesque', sans-serif;
+
+}
+
+.nav {
+    margin: 0  0;
+    padding: 0 10px;
+    background-color: #06283D;
+    color: #DFF6FF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+  
+}
+
+.navbtns ul {
+    display: flex;
+    list-style: none;
+}
+.branding{
+    font-size: 25px;
+    /* font-family:Arial, Helvetica, sans-serif; */
+}
+.navbtns ul li{
+    margin-left: 20px;
+    font-size: 20px;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+.featuredContainer{
+    /* border: 2px red dashed; */
+    height: 99vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/bg.jpg);
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+}
+.title{
+    color: white;
+}
+.editorContainer{
+    height: 100vh;
+    /* border: 2px dashed red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/polaroids.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.catogories{
+    height: 300px;
+    width: 300px;
+    /* border: 2px dashed red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DFF6FF;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+.catogories:hover{
+    font-size: large;
+    cursor: pointer;
+    background-color: #06283D;
+    color: tomato;
+}
